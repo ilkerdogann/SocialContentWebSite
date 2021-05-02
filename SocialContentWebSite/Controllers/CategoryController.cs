@@ -21,6 +21,14 @@ namespace SocialContentWebSite.Controllers
             var categoryvalues = cm.GetAllBL();
             return View(categoryvalues);
         }
+        
+        [HttpGet]
+        public ActionResult AddCategory()
+        {
+            return View();
+        }
+
+        [HttpPost]
         public ActionResult AddCategory(Category p)
         {
             cm.CategoryAddBL(p);
