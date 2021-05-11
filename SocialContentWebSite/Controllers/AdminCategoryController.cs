@@ -63,7 +63,6 @@ namespace SocialContentWebSite.Controllers
         {
             cm.CategoryUpdate(p);
             return RedirectToAction("Index");
-
         }
     }
 }
