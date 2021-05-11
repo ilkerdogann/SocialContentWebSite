@@ -13,7 +13,7 @@ namespace SocialContentWebSite.Controllers
 {
     public class AdminCategoryController : Controller
     {
-        CategoryManager cm = new CategoryManager(new EfCategoryDal);
+        CategoryManager cm = new CategoryManager(new EfCategoryDal());
         public ActionResult Index()
         {
             var categoryvalues = cm.GetList();
@@ -38,7 +38,7 @@ namespace SocialContentWebSite.Controllers
             {
                 foreach (var item in results.Errors)
                 {
-                    ModelState.AddModelError(item.PropertyName, item.);
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
                 }
             }
             return View();
