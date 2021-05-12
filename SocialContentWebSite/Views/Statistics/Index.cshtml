@@ -1,0 +1,49 @@
+﻿@model SocialContentWebSite.Models.StatisticsModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<link href="~/Theme/web2/css/style.css" rel="stylesheet" media="all" />
+
+<br />
+
+<div style="background-color:skyblue">
+
+    <h3>@Model.CategoryCount</h3>
+
+    <p>Toplam Kategori Sayısı</p>
+
+</div>
+
+<div style="background-color:lightgreen">
+
+    <h3>@Model.Heading</h3>
+
+    <p>Yazılım Kategorisine Ait Başlık Sayısı</p>
+
+</div>
+
+<div style="background-color:cornflowerblue">
+
+    <h3>@Model.Writer</h3>
+
+    <p>Yazar Adında 'A' Harfi Geçen Yazar Sayısı</p>
+
+</div>
+
+<div style="background-color:coral">
+
+    <h3>@Model.HeadingMax</h3>
+
+    <p>En Fazla Başlığa Sahip Kategori Adı</p>
+
+</div>
+
+<div style="background-color:blueviolet">
+
+    <h3>@Model.StatusDifference</h3>
+
+    <p>Kategori Sayfasındaki Aktif Kategori Sayısı</p>
+
+</div>
