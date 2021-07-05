@@ -30,6 +30,11 @@ namespace BusinessLayer.Concrete
             _headingDal.Insert(heading);
         }
 
+        public void HeadingAdd(IHeadingService heading)
+        {
+            throw new NotImplementedException();
+        }
+
         public void HeadingDelete(Heading heading)
         {
             _headingDal.Delete(heading);
@@ -38,6 +43,11 @@ namespace BusinessLayer.Concrete
         public void HeadingUpdate(Heading heading)
         {
             _headingDal.Update(heading);
+        }
+
+        IHeadingService IHeadingService.GetByID(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }
